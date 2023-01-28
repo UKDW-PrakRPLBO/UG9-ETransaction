@@ -1,2 +1,2 @@
 # UG9-ETransaction
-Digital payment yang biasa kita gunakan umumnya diklasifikasikan ke dalam dua kategori, yaitu Mobile Banking (e-Banking) dan Mobile Wallet (e-Wallet).
+Bacalah petunjuk pengerjaan yang ada pada file Soal UG9_Polimorfisme_Tipe A.docx
