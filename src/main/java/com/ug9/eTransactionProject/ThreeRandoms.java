@@ -2,7 +2,7 @@ package com.ug9.eTransactionProject;
 
 public class ThreeRandoms {
     public static String helloYou(String blank) {
-        return "Blank";
+        return "Hello "+blank;
     }
 
     public static int countDogs(String catCatCatcat) {

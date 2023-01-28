@@ -23,16 +23,17 @@ public abstract class DigitalPayment {
 
     public abstract void transfer(DigitalPayment dp, long nominal);
 
-    public void printBuktiTransfer(DigitalPayment penerima,long nominal){
-        if (penerima instanceof BNImo){
-            System.out.print("Transfer ke BNI Mobile");
-        } else if (penerima instanceof BRImo){
-            System.out.print("Transfer ke BRI Mobile");
-        } else if (penerima instanceof Dana){
-            System.out.print("Transfer ke DANA");
-        } else if (penerima instanceof Ovo){
-            System.out.print("Transfer ke OVO");
+    public void printBuktiTransfer(DigitalPayment penerima, long nominal) {
+        String msg = "";
+        if (penerima instanceof BNImo) {
+            msg = "Transfer ke BNI Mobile";
+        } else if (penerima instanceof BRImo) {
+            msg = "Transfer ke BRI Mobile";
+        } else if (penerima instanceof Dana) {
+            msg = "Transfer ke DANA";
+        } else if (penerima instanceof Ovo) {
+            msg = "Transfer ke OVO";
         }
-        System.out.println(" atas nama "+penerima.nama+" sebesar Rp "+nominal+" sukses");
+        System.out.println(msg + " atas nama " + penerima.nama + " sebesar Rp " + nominal + " sukses");
     }
 }
